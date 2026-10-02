@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #c5c5c5;
+        }
+        [correct = "no"]{
+            color: #ff0000;
+        }
+        [correct = "yes"]{
+            color: #2dff00;
+        }
+        input[correct = "no"]{
+            border: 1px solid #ff0000;
+            box-shadow: 0 0 5px #ff0000;
+        }
+        input[correct = "yes"]{
+            border: 1px solid #2dff00;
+            box-shadow: 0 0 5px #2dff00;
+        }
+    </style>
+</head>
+<body>
+<form id="myForm">
+    <input type="text" id="myInput2" placeholder="Логін">
+    <p id="loginRequirements">Вимоги до логіна: <br>
+        від 3 до 10 символів; <br>
+        тільки латинські літери та цифри, без кирилиці й пробілів</p>
+    <input type="password" id="myInput3" placeholder="Пароль">
+    <p id="passwordRequirements">
+        Вимоги до пароля: <br>
+        не менше 8 символів; <br>
+        хоча б одна цифра; <br>
+        хоча б одна велика латинська літера; <br>
+        без кирилиці. <br>
+    </p>
+    <button disabled id="submit">Зареєструватися</button>
+    <p id="message"></p>
+</form>
+<script src="index.js"></script>
+</body>
+</html>
